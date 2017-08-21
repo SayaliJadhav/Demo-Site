@@ -1,0 +1,44 @@
+/* Temp styles */
+.header, .sidebar, .content, .footer { border: 5px solid black; }
+.content, .sidebar, .footer { border-top: none; }
+.sidebar.right { border-right: none; }
+.sidebar.left { border-left: none; }
+/* Core styles */
+.main {
+    position: relative; /* needed for stacking */
+    height: 600px;
+    width: 100%;
+}
+
+.header {
+    position: relative; /* needed for stacking */
+    height: 15%;
+    width: 99.8%;
+}
+.content {
+    position: relative; /* needed for stacking */
+    width: 99.8%;
+    height: 70%;
+}
+.sidebar {
+    position: relative; /* needed for stacking */
+    width: 20%;
+    height: 100%;
+    border-top: none;
+}
+.sidebar.left { float: left; }
+.sidebar.left:after,
+.sidebar.right:after {
+    clear: both;
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+}
+.sidebar.right { float: right; }
+.footer {
+    position: relative; /* needed for stacking */
+    width: 99.8%;
+    height: 10%;
+    /* top: 90%; */
+}
+
