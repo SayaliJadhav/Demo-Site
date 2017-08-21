@@ -6,7 +6,7 @@
 /* Core styles */
 .main {
     position: relative; /* needed for stacking */
-    height: 600px;
+    height: 60px;
     width: 100%;
 }
 
